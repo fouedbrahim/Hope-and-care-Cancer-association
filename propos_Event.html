@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Charity Theme Blog Page </title>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/mq.js"></script>
+<![endif]-->
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width">
+<!-- Css Files Start -->
+<link href="css/style.css" rel="stylesheet" type="text/css" /><!-- All css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" /><!-- Bootstrap Css -->
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/customIE.css" /><![endif]-->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" /><!-- Font Awesome Css -->
+<link href="css/font-awesome-ie7.css" rel="stylesheet" type="text/css" /><!-- Font Awesome iE7 Css -->
+<!-- Css Files End -->
+<!-- Social Icons no JS -->
+<noscript>
+		<link rel="stylesheet" type="text/css" href="css/nj.css" />
+</noscript>
+<!-- Social Icons no JS -->
+<script language="javascript">
+function nomEvent(f1){
+var test = document.f1.nom.value;
+if (test=="")
+{return false;}
+else
+{return true;}}
+
+function date(f1){
+if((document.f1.jour.value==0) || (document.f1.mois.value==0) || (document.f1.annee.value==0))
+return false;
+else return true;}
+
+function lieu(f1){
+var test = document.f1.lieu.value;
+if (test=="")
+{return false;}
+else
+{return true;}}
+
+function gratuit(f1){
+if (f1.Radio1[0].checked) {return true;}
+else if (f1.Radio1[1].checked) {return true;}
+else {return false;}
+}
+
+function description(f1){
+var test = document.f1.description.value;
+if (test=="")
+{return false;}
+else
+{return true;}}
+
+function ctrl_form(f1) {
+var c1=nomEvent(f1);
+if (c1==false)
+{alert("veuillez entrer le nom de votre evenement dabord svp!!");}
+
+var c2=date(f1);
+if (c2==false)
+{alert("veuillez indiquer la date dabord svp!!");}
+
+var c3=lieu(f1);
+if (c3==false)
+{alert("veuillez entrer le lieu de votre evenement dabord svp!!");}
+
+var c4= gratuit(f1);
+ if (c4==false)
+{alert("veuillez indiquer la gratuite de votre evenement dabord svp!!");}
+
+var c5= description(f1);
+ if (c5==false)
+{alert("veuillez indiquer une description breve de votre evenement dabord svp!!");}
+}
+</script>
+</head>
+<body>
+<!-- Start Main Wrapper -->
+<div class="wrapper">
+<!-- Start of Header -->
+	<header>
+  <!-- Start Main Header -->
+  <section class="top_bar">
+	<section class="container-fluid container">
+		<section class="row-fluid">
+			<article class="span6">
+				<ul class="details">
+					<li><i class="icon-map-marker"> </i> Tunis</li>
+					<li><i class="icon-mobile-phone"> </i> +216 98 765 432 </li>
+					<li><i class="icon-envelope-alt"> </i> hope.care@esprit.tn</li>
+				</ul>
+			</article>
+			<article class="span4 offset2"> 		
+				<ul class="social">
+					<li> <a href="#" class="s8"> Pintrest</a> </li>
+					<li> <a href="#" class="s7"> Youtube</a> </li>
+					<li> <a href="#" class="s6"> Vimeo </a> </li>
+					<li> <a href="#" class="s5"> Twitter</a> </li>
+					<li> <a href="#" class="s4"> RSS </a> </li>
+					<li> <a href="#" class="s3"> Flicker</a> </li>
+					<li> <a href="#" class="s2"> Dribble</a> </li>
+					<li> <a href="#" class="s1"> Facebook</a> </li>
+				</ul>
+			</article>
+		</section>
+	</section>	
+  </section>
+
+  <section class="logo_container">
+		  <section class="container-fluid container">
+				<section class="row-fluid">
+					  <section class="span4">
+							<h1 id="logo">
+								<a href="index.html">
+									<img src="images/logo.png">
+								</a>
+							</h1>
+						</section>
+						
+						
+						
+				</section>
+			</section>
+  </section>
+	<!-- Main Nav Bar -->
+			<nav id="nav">
+				<section class="container-fluid container">
+					<section class="row-fluid">
+			  <div class="navbar navbar-inverse">
+				<div class="navbar-inner">
+				  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				  <div class="nav-collapse collapse">
+					<ul class="nav">
+	
+					<li> <a href="index.html"> Acceuil </a> </li>
+					  <li class="dropdown"> <a class="dropdown-toggle" href="about-us.html"> le cancer ?<b class="caret"></b> </a>
+						<ul class="dropdown-menu">
+							<li><a href="team.html"> Blog</a></li>
+							<li><a href="career.html">Careers</a></li>
+						</ul>
+					  </li>
+ 
+					  <li class="dropdown"> <a class="dropdown-toggle" href="event_listing.html">Soutenir<b class="caret"></b> </a>
+						<ul class="dropdown-menu">
+							<li><a href="event_detail.html">Faire un don</a></li>
+							<li><a href="event_calander.html">Signer des pétitions</a></li>
+							<li><a href="event_venue.html">Acheter en ligne</a></li>
+							<li><a href="event_venue.html">Participer aux evenements</a></li>
+						</ul>
+					  </li>
+ 
+					  <li class="dropdown"> <a class="dropdown-toggle" href="crowdfunding_listing.html" > S'engager<b class="caret"></b> </a>
+						<ul class="dropdown-menu">
+							<li><a href="crowdfunding_listing.html">Devenir un benevole</a></li>
+							<li><a href="crowdfunding_detail.html">Entreprise parentaire</a></li>
+							</ul>
+					  </li>
+
+ 					  <li class="dropdown"> <a class="dropdown-toggle" href="product_listing_list.html" > Suivie psychologique <b class="caret"></b> </a>
+						<ul class="dropdown-menu">
+							<li><a href="product_listing_grid.html">consultation individuelle</a></li>
+							<li><a href="product_listing_list.html">consultation en groupe</a></li>
+							
+						</ul>
+					  </li>
+ 
+  					  <li class="dropdown active"> <a class="dropdown-toggle" href="blog.html" >  soutien moral <b class="caret"></b> </a>
+						<ul class="dropdown-menu">
+						<li><a href="blog.html">envoyer des couriers</a></li>
+							<li><a href="blog_detail.html">visiter les malades</a></li>
+ 						</ul>
+					  </li>
+ 
+   					 
+  
+ 
+ 
+						<li> <a href="contact_us.html"> Contact </a> </li>
+						<li> <a href="contact_us.html"> Connexion </a> </li>
+						<li> <a href="contact_us.html"> inscription </a> </li>
+
+					</ul>
+				  </div>
+				  <!--/.nav-collapse -->
+				</div>
+				<!-- /.navbar-inner -->
+			  </div>
+			  <d
+			  <!-- /.navbar -->
+					</section>
+				</section>
+			</nav>
+	<!-- End Main Nav Bar -->	 
+	 </header>
+<!-- End of Header -->
+
+<!-- Title & BreadCrumbs -->
+<section class="mtop">
+	<section class="container-fluid container">
+		<section class="row-fluid">
+			<section id="donation_box">
+				<section class="container container-fluid">
+					<section class="row-fluid">
+					<div class="span8 first"> <h2>  formulaire </h2> </div>
+		<div class="span4 title_right">
+				<div class="dropdown" id="cart_dropdown">
+ 				
+				
+						
+					</div>
+			</div>
+	</section>
+				</section>
+			</section>		<!-- end of Page Title -->
+	</section>
+ 		<section class="row-fluid">
+			<!-- BreadCrumbs -->
+				<figure id="breadcrumbs" class="span12">
+					
+				</figure>
+			<!-- End of breadcrumbs -->
+		</section>
+	</section>
+</section>
+<!-- End of Tile & Breadcrumbs -->
+
+<!-- Page Content Container -->
+<section id="content" class="mbtm blog">
+	<section class="container-fluid container">
+		<section class="row-fluid">
+				
+				<section class="span9" id="blog_listing">
+				
+					<figure class="blog_item">					
+
+				
+					<div class="inner_lyr">
+				
+					<form name="f1" >
+
+
+</br>
+</br>
+</br>
+<fieldset class="fieldset">
+			<legend> proposition d'evenement </legend>
+<table  valign="left" width="100%" height="100%" align="top">
+
+<div  >
+	<tr> 
+		<td  class = "champ" width="30%" align="right"> Nom evenement: &nbsp &nbsp &nbsp </td> 
+		<td> <input name="nom" type="text" size="80" value=""> <span class="etoile"> * </span> </td> 
+	</tr> 
+</div>
+
+
+
+<div>
+	<tr>
+		<td class="champ" width="30%" align="right"> Date:&nbsp &nbsp &nbsp </td>
+		<td> <select name="jour">
+				<option value="0">jour</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+				<option>13</option>
+				<option>14</option>
+				<option>15</option>
+				<option>16</option>
+				<option>17</option>
+				<option>18</option>
+				<option>19</option>
+				<option>20</option>
+				<option>21</option>
+				<option>22</option>
+				<option>23</option>
+				<option>24</option>
+				<option>25</option>
+				<option>26</option>
+				<option>27</option>
+				<option>28</option>
+				<option>29</option>
+				<option>30</option>
+				<option>31</option>
+			</select> 
+			<select name="mois">
+				<option value="0">mois</option>
+				<option>janvier</option>
+				<option>fevrier</option>
+				<option>mars</option>
+				<option>avril</option>
+				<option>mai</option>
+				<option>juin</option>
+				<option>juillet</option>
+				<option>aout</option>
+				<option>septembre</option>
+				<option>octobre</option>
+				<option>novembre</option>
+				<option>decembre</option>
+			</select> 
+			<select name="annee">
+				<option value="0">annee</option>
+				<option>1980</option>
+				<option>1981</option>
+				<option>1982</option>
+				<option>1983</option>
+				<option>1984</option>
+				<option>1985</option>
+				<option>1986</option>
+				<option>1987</option>
+				<option>1988</option>
+				<option>1989</option>
+				<option>1990</option>
+				<option>1991</option>
+				<option>1992</option>
+				<option>1993</option>
+				<option>1994</option>
+				<option>1995</option>
+				<option>1996</option>
+				<option>1997</option>
+				<option>1998</option>
+				<option>1999</option>
+				<option>2000</option>
+				<option>2001</option>
+				<option>2002</option>
+				<option>2003</option>
+				<option>2004</option>
+				<option>2005</option>
+				<option>2006</option>
+				<option>2007</option>
+				<option>2008</option>
+				<option>2009</option>
+				<option>2010</option>
+				<option>2011</option>
+				<option>2012</option>
+				<option>2013</option>
+				<option>2014</option>
+			</select>  <span class="etoile"> * </span>
+		</td> 
+	</tr>
+</div>
+
+<div  >
+	<tr> 
+		<td  class = "champ" width="30%" align="right"> Lieu de l'evenement: &nbsp &nbsp &nbsp </td> 
+		<td> <input name="lieu" type="text" size="80" value=""> <span class="etoile"> * </span> </td> 
+	</tr> 
+</div>
+
+<div>
+	<tr> 
+		<td class= "champ" width="30%" align="right"> Gratuit:&nbsp &nbsp &nbsp </td> 
+		<td> <input name="Radio1" type="Radio" id="type1">Oui &nbsp &nbsp 
+			 <input name="Radio1" type="Radio" id="type2"> Non &nbsp &nbsp 
+			  <span class="etoile"> * </span> </td> 
+	</tr> 
+</div>
+
+<div>
+	<tr>
+		<td class="champ" width="30%" align="right"> Description: &nbsp &nbsp &nbsp </td>
+		<td> <textarea name="description" cols="59" rows="7"> </textarea>  <span class="etoile"> * </span> </td>
+	</tr>
+</div>
+
+<div>
+	<tr>
+	<td> </td>
+	<td align="center">
+		<input type="submit" value="Annuler" OnClick=""> &nbsp &nbsp
+		<input type="submit" value="Envoyer" OnClick="ctrl_form(f1)"> &nbsp &nbsp
+	</td> 
+	</tr>
+</div>
+ </table>
+</fieldset>
+</form>
+						
+					
+						
+						
+					</div>
+				
+				
+					</figure>
+ 					
+ 					
+ 
+ 					
+				
+	</section>
+				
+				
+		</section>
+	</section>
+
+</section>
+<!-- Page Content Container -->
+	 
+
+</div>
+<!-- End Main Wrapper -->
+<!-- JS Files Start -->
+<script type="text/javascript" src="js/lib-1-9-1.js"></script><!-- lib Js -->
+<script type="text/javascript" src="js/lib-1-7-1.js"></script><!-- lib Js -->
+<script type="text/javascript" src="js/modernizr.js"></script><!-- Modernizr -->
+<script type="text/javascript" src="js/easing.js"></script><!-- Easing js -->
+<script type="text/javascript" src="js/bootstrap.js"></script><!-- Bootstrap -->
+<script type="text/javascript" src="js/bxslider.js"></script><!-- BX Slider -->
+<script type="text/javascript" src="js/clearInput.js"></script><!-- Input Clear -->
+<script type="text/javascript" src="js/smooth-scroll.js"></script><!-- smooth Scroll -->
+<script type="text/javascript" src="js/prettyPhoto.js"></script><!-- Pretty Photo -->
+<script type="text/javascript" src="js/social.js"></script><!-- Social Media Hover Effect -->
+<script type="text/javascript" src="js/countdown.js"></script><!-- Event Counter -->
+<script type="text/javascript" src="js/custom.js"></script><!-- Custom / Functions -->
+<!--[if IE 8]>
+     <script src="js/ie8_fix_maxwidth.js" type="text/javascript"></script>
+<![endif]--> 
+</body>
+</html>
